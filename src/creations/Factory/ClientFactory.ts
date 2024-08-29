@@ -7,15 +7,15 @@ export class ClientFactory {
 
     constructor(private readonly clotheFactory: ClothesAbstractFactory) { }
 
-    public getOutfit(): { boats: Boat, sweater: Sweater } {
-        const boats = this.clotheFactory.createBoats();
+    public getOutfit(boatSize: Clothe["size"]): { boats: Boat, sweater: Sweater } {
+        const boats = this.clotheFactory.createBoats(boatSize);
         const sweater = this.clotheFactory.createSweater();
         const outfitCreated = { boats, sweater };
         return outfitCreated
     }
 
-    public addBoats() {
-        const boats = this.clotheFactory.createBoats();
+    public addBoats(size: Clothe["size"]) {
+        const boats = this.clotheFactory.createBoats(size);
         this.clothes.push(boats);
     }
 

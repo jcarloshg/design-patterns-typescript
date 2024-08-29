@@ -1,6 +1,6 @@
-import { Boat, Sweater } from "./Clothe";
+import { Boat, Clothe, Sweater } from "./Clothe";
 
 export interface ClothesAbstractFactory {
-    createBoats: () => Boat;
+    createBoats: (size: Clothe['size']) => Boat;
     createSweater: () => Sweater;
 }

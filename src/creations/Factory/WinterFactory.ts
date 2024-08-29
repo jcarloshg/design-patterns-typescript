@@ -1,4 +1,4 @@
-import { Boat, Sweater } from "./Clothe";
+import { Boat, Clothe, Sweater } from "./Clothe";
 import { ClothesAbstractFactory } from "./ClothesAbstractFactory";
 
 export interface WinterBoat extends Boat {
@@ -13,10 +13,10 @@ export class WinterFactory implements ClothesAbstractFactory {
 
     constructor() { }
 
-    createBoats(): WinterBoat {
+    createBoats(size: Clothe["size"]): WinterBoat {
         return {
             name: "BoatsWinter",
-            size: "l"
+            size,
         }
     }
 
