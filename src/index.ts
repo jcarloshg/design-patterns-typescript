@@ -1,3 +1,7 @@
 console.log("This is a project with Nodejs and TypeScript");
 
-import('./creations/Factory/indexFactory')
+// Factory
+// import('./creations/Factory/indexFactory')
+
+// Factory method
+import('./creations/FactoryMethod/indexFactoryMethod')
