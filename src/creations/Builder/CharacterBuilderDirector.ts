@@ -15,20 +15,22 @@ export class CharacterBuilderDirector {
         this._characterBuilderAbstract = _characterBuilderAbstract
     }
 
-    public generateDefaultCharacter(): Character {
-        this._characterBuilderAbstract.generateNewCharacter()
+    public generateDefaultCharacter({ name }: { name: String }): Character {
+        this._characterBuilderAbstract.generateNewCharacter({ name })
         this._characterBuilderAbstract.addHair({ style: "normal" })
         this._characterBuilderAbstract.addJacket({ style: "normal" })
         this._characterBuilderAbstract.addPants({ style: "normal" })
         this._characterBuilderAbstract.addShoes({ style: "normal" })
         const currentCharacter = this._characterBuilderAbstract.getCurrentCharacter()
-        this._characterBuilderAbstract.generateNewCharacter()
+        this._characterBuilderAbstract.dropCurrentCharacter()
         return currentCharacter;
     }
 
-    public getCharacterWithoutClothes(): Character {
-        this._characterBuilderAbstract.generateNewCharacter()
-        return this._characterBuilderAbstract.getCurrentCharacter()
+    public getCharacterWithoutClothes({ name }: { name: String }): Character {
+        this._characterBuilderAbstract.generateNewCharacter({ name })
+        const character = this._characterBuilderAbstract.getCurrentCharacter()
+        this._characterBuilderAbstract.dropCurrentCharacter()
+        return character
     }
 
 }

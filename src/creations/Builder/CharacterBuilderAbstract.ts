@@ -2,7 +2,8 @@ import { Character } from "./Character";
 
 export abstract class CharacterBuilderAbstract {
 
-    abstract generateNewCharacter(): void
+    abstract generateNewCharacter({ name }: { name: String }): void
+    abstract dropCurrentCharacter(): void
     abstract getCurrentCharacter(): Character
 
     abstract addHair({ style }: { style: string }): void

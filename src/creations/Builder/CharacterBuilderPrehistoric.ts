@@ -1,25 +1,23 @@
-
-// Prehistoric
-
-import { CharacterBuilderAbstract } from "./CharacterBuilderAbstract";
 import { Character } from "./Character";
+import { CharacterBuilderAbstract } from "./CharacterBuilderAbstract";
 
-export class CharacterBuilderModern implements CharacterBuilderAbstract {
+export class CharacterBuilderPrehistoric implements CharacterBuilderAbstract {
 
     private _character: Character | undefined;
 
     generateNewCharacter({ name }: { name: String }): void {
-        this._character = new Character({ typeCharacter: "Modern", name })
+        this._character = new Character({ typeCharacter: "Prehistoric", name })
     }
 
     getCurrentCharacter(): Character {
-        if (!this._character) throw new Error("You need to run [generateNewCharacter({name:string})]");
-        return this._character
+        if (this._character) return this._character
+        throw new Error("You need to run [generateNewCharacter({name:string})]");
     }
 
     dropCurrentCharacter(): void {
         this._character = undefined
     }
+
 
     addHair({ style }: { style: string; }): void {
         if (!this._character) throw new Error("You need to run [generateNewCharacter({name:string})]");
