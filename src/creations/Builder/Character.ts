@@ -36,11 +36,10 @@ export class Character {
     public printCharacter(): void {
         console.log("\n\n======character")
         console.log(`${this._name} is type -> `, this._typeCharacter);
-        this._hair && console.log(`${this._name} has hair -> `, this._hair);
-        this._jacket && console.log(`${this._name} has jacket -> `, this._jacket);
-        this._pants && console.log(`${this._name} has pants -> `, this._pants);
-        this._shoes && console.log(`${this._name} has shoes -> `, this._shoes);
-        console.log("====== ====== ====== ======")
+        this._hair && console.log(`${this._name}    has hair ->     `, this._hair);
+        this._jacket && console.log(`${this._name}  has jacket ->   `, this._jacket);
+        this._pants && console.log(`${this._name}   has pants ->    `, this._pants);
+        this._shoes && console.log(`${this._name}   has shoes ->    `, this._shoes);
     }
 
     // ============================================================
@@ -48,7 +47,10 @@ export class Character {
     // ============================================================
 
     public run() {
-        if (!this._shoes) return "The character doesn't run. The character doesn't have shoes"
+        if (!this._shoes) {
+            console.log(`${this._name} doesn't run. The character doesn't have shoes`);
+            return
+        }
         this._state = "Running"
         console.log("The character is: ", this._state);
     }

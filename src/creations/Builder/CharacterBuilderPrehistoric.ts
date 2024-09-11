@@ -36,7 +36,7 @@ export class CharacterBuilderPrehistoric implements CharacterBuilderAbstract {
 
     addShoes({ style }: { style: string; }): void {
         if (!this._character) throw new Error("You need to run [generateNewCharacter({name:string})]");
-        this._character.set_pants({ data: style })
+        this._character.set_shoes({ data: style })
     }
 
 }
