@@ -10,4 +10,7 @@ console.log("This is a project with Nodejs and TypeScript");
 // import('./creations/Builder/indexBuilder')
 
 // prototype
-import("./creations/Prototype/index")
+// import("./creations/Prototype/index")
+
+// singleton
+import("./creations/Singleton/index")

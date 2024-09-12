@@ -4,11 +4,13 @@ type UserKeys = { userName: string, token: string };
 export class UserSingleton {
 
     private keys?: UserKeys;
+    private static _instance?: UserSingleton
 
     private constructor() { }
 
     static get instance(): UserSingleton {
-        return new UserSingleton()
+        if (!this._instance) this._instance = new UserSingleton()
+        return this._instance
     }
 
     public setKeys(keys: UserKeys) {
