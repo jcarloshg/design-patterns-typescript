@@ -13,4 +13,10 @@ console.log("This is a project with Nodejs and TypeScript");
 // import("./creations/Prototype/index")
 
 // singleton
-import("./creations/Singleton/index")
+// import("./creations/Singleton/index")
+
+
+// ============================================================
+// structures
+// ============================================================
+import('./structures/Adapter/Adapter.index');
