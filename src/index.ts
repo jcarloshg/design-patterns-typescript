@@ -15,9 +15,9 @@ console.log("This is a project with Nodejs and TypeScript");
 // singleton
 // import("./creations/Singleton/index")
 
-
 // ============================================================
 // structures
 // ============================================================
 // import('./structures/Adapter/Adapter.index');
-import('./structures/Bridge/Bridge.index');
+// import('./structures/Bridge/Bridge.index');
+import("./structures/Composite/Forms/index");
