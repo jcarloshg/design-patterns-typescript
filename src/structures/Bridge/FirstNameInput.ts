@@ -1,11 +1,11 @@
 import { InputAbstract } from "./InputAbstract";
 import { InputImplementation } from "./InputImplementation";
 
-export class EmailInput extends InputAbstract<String> {
-    protected name: String = "Email";
+export class FirstNameInput extends InputAbstract<String> {
+    protected name: String = "First Name";
 
-    constructor(inputImplementation: InputImplementation<String>) {
-        super(inputImplementation);
+    constructor(inputAbstract: InputImplementation<String>) {
+        super(inputAbstract);
     }
 
     public renderInput(): void {

@@ -7,7 +7,7 @@ type InputData<T> = {
 export interface InputImplementation<T> {
     data: InputData<T>,
     messageError?: String,
-    render(): void,
+    render(inputName: String): void,
     setData(value: T): void,
     validator?: (value: T) => boolean
 }

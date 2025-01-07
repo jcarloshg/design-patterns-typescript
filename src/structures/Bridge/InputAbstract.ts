@@ -11,8 +11,7 @@ export class InputAbstract<T> {
     }
 
     public renderInput() {
-        console.log(`[input] -> ${this.inputImplementation.data}`)
-        this.inputImplementation.render()
+        this.inputImplementation.render(this.name)
     }
 
     public setValue(data: T) { this.inputImplementation.setData(data) }

@@ -8,9 +8,25 @@ export class InputImplementationOptional<T> implements InputImplementation<T> {
         this.data = { value, }
     }
 
-    render(): void {
-        console.log(`[${this.data.value}]`);
+    render(inputName: String): void {
+
+        const inputLength = 50;
+        const inputBorders = `=`.repeat(inputLength);
+
+        const inputValueStart = `|| `
+        const inputValueMiddle = `${this.data.value}`;
+        const inputValueEnd = ` ||`
+        const inputValueMiddleLength = `${this.data.value}`.length;
+        const inputSpaces = ' '.repeat(inputLength - inputValueMiddleLength - inputValueStart.length - inputValueEnd.length);
+        const inputBordersMiddle = `${inputValueStart}${inputValueMiddle}${inputSpaces}${inputValueEnd}`;
+
         console.log('');
+        console.log(`${inputName}`);
+        console.log(inputBorders);
+        console.log(inputBordersMiddle);
+        console.log(inputBorders);
+        console.log('');
+
     }
 
     setData(value: T): void {
