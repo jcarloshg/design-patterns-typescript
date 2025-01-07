@@ -17,6 +17,7 @@
 #### Documentation
 
 - [YouTube](https://www.youtube.com/watch?v=ES3DnAPted0)
+- [Refactoring Guru](https://refactoring.guru/design-patterns/composite)
 
 #### Implementation
 
