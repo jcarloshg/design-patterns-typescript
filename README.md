@@ -14,6 +14,8 @@
 
 ### Composite
 
+![Composite](Docs/composite.png)
+
 #### Documentation
 
 - [YouTube](https://www.youtube.com/watch?v=ES3DnAPted0)
