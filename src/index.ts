@@ -20,4 +20,9 @@ console.log("This is a project with Nodejs and TypeScript");
 // ============================================================
 // import('./structures/Adapter/Adapter.index');
 // import('./structures/Bridge/Bridge.index');
-import("./structures/Composite/Forms/index");
+// import("./structures/Composite/Forms/index");
+
+// Decorator
+// import('./structures/Decorator/ConvertDocs/index');
+import('./structures/Decorator/HTML/index');
+
