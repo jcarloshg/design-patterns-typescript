@@ -29,6 +29,7 @@
 ### Decorator
 
 ![Decorador UML](Docs/decorador.png)
+![Decorador UML 02](Docs/decorador_02.png)
 
 - Añadir funcionalidades anidando objetos en otros objectos
 - Se sugiere que ninguna funcionalidad debe de depender de otra funcionalidad
