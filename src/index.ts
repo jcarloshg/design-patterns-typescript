@@ -24,5 +24,7 @@ console.log("This is a project with Nodejs and TypeScript");
 
 // Decorator
 // import('./structures/Decorator/ConvertDocs/index');
-import('./structures/Decorator/HTML/index');
+// import('./structures/Decorator/HTML/index');
 
+// Facade
+import('./structures/Facade/RegisterSocialMedia/index');

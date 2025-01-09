@@ -24,7 +24,7 @@
 #### Implementation
 
 - [Forms](src/structures/Composite/Forms/)
-    - use this when you need save values to operate with the main method of interface of Composite
+  - use this when you need save values to operate with the main method of interface of Composite
 
 ### Decorator
 
@@ -34,17 +34,31 @@
 - Añadir funcionalidades anidando objetos en otros objectos
 - Se sugiere que ninguna funcionalidad debe de depender de otra funcionalidad
 - Se sugiere que las Entidades Decoradas pertenezcan:
-    - A un mismo nivel de abstracción
-    - A un mismo grupo de conceptualization
-        - OK: Convertir un doc ->  pdf, html, xml, etc.
-        - NOT OK: Convertir un doc -> pdf, cerrar sesión, enviar por correo
+  - A un mismo nivel de abstracción
+  - A un mismo grupo de conceptualization
+    - OK: Convertir un doc -> pdf, html, xml, etc.
+    - NOT OK: Convertir un doc -> pdf, cerrar sesión, enviar por correo
 
-### Documentation
- - [Refactoring Guru](https://refactoring.guru/es/design-patterns/decorator)
- - [Fernando Herrera - [S16/L1] Patrones de Diseño - Soluciones prácticas y eficientes: Decorator | Patrón](https://www.youtube.com/watch?v=uLaFPDB53X0)
- - [Fernando Herrera - [S16/L2] Patrones de Diseño - Soluciones prácticas y eficientes: Decorator | Utilización](https://www.youtube.com/watch?v=zAcu20tjZJc)
+#### Documentation
 
+- [Refactoring Guru](https://refactoring.guru/es/design-patterns/decorator)
+- [Fernando Herrera - [S16/L1] Patrones de Diseño - Soluciones prácticas y eficientes: Decorator | Patrón](https://www.youtube.com/watch?v=uLaFPDB53X0)
+- [Fernando Herrera - [S16/L2] Patrones de Diseño - Soluciones prácticas y eficientes: Decorator | Utilización](https://www.youtube.com/watch?v=zAcu20tjZJc)
 
 #### Implementation
+
 - [Convertidor de documentos](src/structures/Decorator/ConvertDocs)
 - [Render HTML](src/structures/Decorator/HTML)
+
+## Facade
+
+- Utiliza el patrón Facade cuando necesites una interfaz limitada pero directa a un subsistema complejo.
+
+![Facade](Docs/facade.png)
+
+#### Documentation
+
+- [Refactoring Guru - Facade](https://refactoring.guru/es/design-patterns/facade)
+
+#### Implementation
+- [Register with social media](src/structures/Facade/RegisterSocialMedia)
