@@ -66,6 +66,9 @@
 
 ## Flyweight
 
+- The factory has to manage the heavy resources
+- When one resource is created, this should be hashed to easy find
+
 ![Flyweight](Docs/Flyweight.png)
 
 #### Implementation
@@ -79,4 +82,6 @@
 
 #### Documentation
 
+- [YouTube - FLYWEIGHT en 2 MINUTOS | PATRONES DE DISEÑO SOFTWARE](https://www.youtube.com/watch?v=0N7C-XzT2Nw)
+- [YouTube - Patrones de diseño - 03 Flyweight](https://www.youtube.com/watch?v=R9KO6sojNTE&t=61s)
 - [Refactoring Guru - Flyweight](https://refactoring.guru/es/design-patterns/flyweight)
