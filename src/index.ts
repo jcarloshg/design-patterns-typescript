@@ -30,6 +30,7 @@ console.log("This is a project with Nodejs and TypeScript");
 // import("./structures/Facade/RegisterSocialMedia/index");
 
 // Flyweight
-import("./structures/Flyweight/SimpleGame/index");
+// import("./structures/Flyweight/SimpleGame/index");
 
-
+// Proxy
+import("./structures/Proxy/GetMyPhotosInstagram/index");
