@@ -61,4 +61,22 @@
 - [Refactoring Guru - Facade](https://refactoring.guru/es/design-patterns/facade)
 
 #### Implementation
+
 - [Register with social media](src/structures/Facade/RegisterSocialMedia)
+
+## Flyweight
+
+![Flyweight](Docs/Flyweight.png)
+
+#### Implementation
+
+- [Simple Game](src/structures/Flyweight/SimpleGame)
+  - Client - Game
+  - Context - Canvas
+  - Factory - EmojiFactory
+  - Flyweight - EmojiFlyweight
+    - State Extrinsic - EmojiExtrinsico
+
+#### Documentation
+
+- [Refactoring Guru - Flyweight](https://refactoring.guru/es/design-patterns/flyweight)

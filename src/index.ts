@@ -27,4 +27,9 @@ console.log("This is a project with Nodejs and TypeScript");
 // import('./structures/Decorator/HTML/index');
 
 // Facade
-import('./structures/Facade/RegisterSocialMedia/index');
+// import("./structures/Facade/RegisterSocialMedia/index");
+
+// Flyweight
+import("./structures/Flyweight/SimpleGame/index");
+
+
