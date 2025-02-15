@@ -1,5 +1,26 @@
 # Pattern Designs
 
+create by: Jose Carlos Huerta
+
+## Creation
+
+### Abstract Factory
+
+#### Documentation
+
+- [refactoring.guru - Abstract Factory](https://refactoring.guru/design-patterns/abstract-factory)
+
+- [YouTube - BettaTech - ABSTRACT FACTORY | PATRONES de DISEÑO](https://www.youtube.com/watch?v=CVlpjFJN17U)
+
+#### Implementations
+
+- [Books](src/creations/AbstractFactory/Books/index.ts)
+- [Clothes](src/creations/AbstractFactory/Clothes/indexFactory.ts)
+
+#### Diagram UML
+
+![abstract-factory.png](Docs/abstract-factory.png)
+
 ## Structural
 
 ### Bridge
