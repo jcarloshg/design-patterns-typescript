@@ -1,7 +1,9 @@
 console.log("This is a project with Nodejs and TypeScript");
 
 // Factory
-// import('./creations/Factory/indexFactory')
+// import('./creations/AbstractFactory/Clothes/indexFactory')
+import('./creations/AbstractFactory/Books/index')
+
 
 // Factory method
 // import('./creations/FactoryMethod/indexFactoryMethod')
@@ -33,4 +35,4 @@ console.log("This is a project with Nodejs and TypeScript");
 // import("./structures/Flyweight/SimpleGame/index");
 
 // Proxy
-import("./structures/Proxy/GetMyPhotosInstagram/index");
+// import("./structures/Proxy/GetMyPhotosInstagram/index");
