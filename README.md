@@ -9,6 +9,10 @@ create by: Jose Carlos Huerta
     - [Documentation](#documentation)
     - [Implementations](#implementations)
     - [Diagram UML](#diagram-uml)
+  - [Factory Method](#factory-method)
+    - [Documentation](#factory-method---documentation)
+    - [Implementations](#factory-method---implementations)
+    - [Diagram UML](#factory-method---diagram-uml)
 - [Structural](#structural)
   - [Bridge](#bridge)
     - [Documentation](#documentation-1)
@@ -47,6 +51,25 @@ create by: Jose Carlos Huerta
 #### Diagram UML
 
 ![abstract-factory.png](Docs/abstract-factory.png)
+
+### Factory Method
+
+#### Factory Method - Documentation
+
+- [refactoring.guru - Factory Method](https://refactoring.guru/es/design-patterns/factory-method)
+
+- [refactoring.guru - Example TypeScript](https://refactoring.guru/es/design-patterns/factory-method/typescript/example)
+
+- [YouTube - The Factory Method Pattern Explained and Implemented in Java | Creational Design Patterns | Geekific](https://www.youtube.com/watch?v=EdFq_JIThqM&t=119s)
+
+#### Factory Method - Implementations
+
+- [Orders](src/creations/FactoryMethod/Orders)
+- [Travels](src/creations/FactoryMethod/Traveling)
+
+#### Factory Method - Diagram UML
+
+![abstract-factory.png](Docs/FactoryMethod.png)
 
 ## Structural
 
