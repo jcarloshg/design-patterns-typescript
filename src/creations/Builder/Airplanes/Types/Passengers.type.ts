@@ -1,0 +1,1 @@
+export type Passengers = 1 | 2;

@@ -7,13 +7,14 @@ console.log("This is a project with Nodejs and TypeScript");
 
 // Factory method
 // import('./creations/FactoryMethod/indexFactoryMethod')
-import('./creations/FactoryMethod/Traveling/Client')
+// import('./creations/FactoryMethod/Traveling/Client')
 
 // builder
 // import('./creations/Builder/indexBuilder')
 
 // prototype
 // import("./creations/Prototype/index")
+import("./creations/Builder/Airplanes/Cliente");
 
 // singleton
 // import("./creations/Singleton/index")
