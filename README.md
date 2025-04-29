@@ -71,6 +71,25 @@ create by: Jose Carlos Huerta
 
 ![abstract-factory.png](Docs/FactoryMethod.png)
 
+### Builder
+
+#### Builder Method - Documentation
+
+- [refactoring.guru - Builder Method](https://refactoring.guru/design-patterns/builder)
+
+- [refactoring.guru - Example TypeScript](https://refactoring.guru/design-patterns/builder/typescript/example)
+
+- [How does Builder Design Pattern solves problems like URL creation?](https://www.youtube.com/watch?v=4ff_KZdvJn8)
+
+#### Builder - Implementations
+
+- [Airplanes](src/creations/Builder/Airplanes)
+- [Character](src/creations/Builder/Character)
+
+#### Builder - Diagram UML
+
+![builder.png](Docs/Builder.png)
+
 ## Structural
 
 ### Bridge
