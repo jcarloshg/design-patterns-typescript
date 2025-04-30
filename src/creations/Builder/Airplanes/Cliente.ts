@@ -1,4 +1,4 @@
-import { AirplaneDirectorBuilder } from "./AirplaneDirectorbuilder";
+import { AirplaneDirectorBuilder } from "./AirplaneDirectorBuilder";
 import { ToyAirplaneBuilder } from "./ToyAirplane.builder"
 import { WarAirplaneBuilder } from "./WarAirplane.builder";
 
