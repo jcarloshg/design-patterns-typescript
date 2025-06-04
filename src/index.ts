@@ -4,7 +4,6 @@ console.log("This is a project with Nodejs and TypeScript");
 // import('./creations/AbstractFactory/Clothes/indexFactory')
 // import('./creations/AbstractFactory/Books/index')
 
-
 // Factory method
 // import('./creations/FactoryMethod/indexFactoryMethod')
 // import('./creations/FactoryMethod/Traveling/Client')
@@ -14,7 +13,7 @@ console.log("This is a project with Nodejs and TypeScript");
 
 // prototype
 // import("./creations/Prototype/index")
-import("./creations/Builder/Airplanes/Cliente");
+// import("./creations/Builder/Airplanes/Cliente");
 
 // singleton
 // import("./creations/Singleton/index")
@@ -38,3 +37,10 @@ import("./creations/Builder/Airplanes/Cliente");
 
 // Proxy
 // import("./structures/Proxy/GetMyPhotosInstagram/index");
+
+// ============================================================
+// behavior
+// ============================================================
+
+// Strategy
+import("./behavior/Strategy/Client");
