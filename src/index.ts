@@ -43,4 +43,7 @@ console.log("This is a project with Nodejs and TypeScript");
 // ============================================================
 
 // Strategy
-import("./behavior/Strategy/RegisterUser/Client");
+// import("./behavior/Strategy/RegisterUser/Client");
+
+// Observer
+import("./behavior/Observer/MusicPlayer/Client");
