@@ -38,8 +38,11 @@ create by: Jose Carlos Huerta
     - [Implementation](#implementation-5)
 - [Behavior 🤖](#behavior-)
   - [Strategy 🧠](#strategy-)
-    - [Documentation](#documentation-7)
-    - [Implementations](#implementations-6)
+    - [Documentation 📚](#documentation-📚)
+    - [Implementations 📚](#implementations-📚)
+  - [Observer](#observer)
+    - [Documentation 📚](#documentation-📚-1)
+    - [Implementations 📚](#implementations-📚-1)
 
 ## Creation 🗺️
 
