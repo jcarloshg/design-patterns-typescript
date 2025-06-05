@@ -3,6 +3,7 @@
 create by: Jose Carlos Huerta
 
 ## index 🚀
+
 - [Creation 🗺️](#creation-)
   - [Abstract Factory 🏭](#abstract-factory-)
     - [Documentation](#documentation)
@@ -228,3 +229,32 @@ create by: Jose Carlos Huerta
     - [SendWelcomeEmail.twilio.ts](src/behavior/Strategy/RegisterUser/infrastructure/useCases/CreateUser/twilio/SendWelcomeEmail.twilio.ts)
   - [Logger.CloudWatch.ts](src/behavior/Strategy/RegisterUser/infrastructure/commons/Logger.CloudWatch.ts)
   - [Logger.Sentry.ts](src/behavior/Strategy/RegisterUser/infrastructure/commons/Logger.Sentry.ts)
+
+## Observer
+
+![Observer.png](Docs/Observer.png)
+![Observer2.png](Docs/Observer2.png)
+
+### Documentation 📚
+
+- [The Observer Pattern Explained and Implemented in Java | Behavioral Design Patterns | Geekific](https://www.youtube.com/watch?v=-oLDJ2dbadA)
+- [Observer Design Pattern - Beau teaches JavaScript](https://www.youtube.com/watch?v=3PUVr8jFMGg)
+- [Refactoring Guru - Observer](https://refactoring.guru/design-patterns/observer)
+
+### Implementations 📚
+
+#### [MusicPlayer](src/behavior/Observer/MusicPlayer)
+
+- Client
+  - [Client](src/behavior/Observer/MusicPlayer/Client.ts)
+- Subscriber - EvenListeners
+  - [EventListener](src/behavior/Observer/MusicPlayer/domain/useCase/PlayMusic/actions/EventListener.action.ts)
+  - Concrete
+    - [PauseLogListener.consoleLog](src/behavior/Observer/MusicPlayer/infrastructure/consolelogs/useCase/PlayMusic/actions/PauseLogListener.consoleLog.ts)
+    - [PlayLogListener.consoleLog](src/behavior/Observer/MusicPlayer/infrastructure/consolelogs/useCase/PlayMusic/actions/PlayLogListener.consoleLog.ts)
+    - [PrintLogListener.consoleLog](src/behavior/Observer/MusicPlayer/infrastructure/consolelogs/useCase/PlayMusic/actions/PrintLogListener.consoleLog.ts)
+    - [SimplePrintLyric.consoleLog](src/behavior/Observer/MusicPlayer/infrastructure/consolelogs/useCase/PlayMusic/actions/SimplePrintLyric.consoleLog.ts)
+- EventManager
+  - [EventManager](src/behavior/Observer/MusicPlayer/domain/useCase/PlayMusic/actions/EventManager.action.ts)
+- Publisher - Player
+  - [Player](src/behavior/Observer/MusicPlayer/domain/models/businessEntity/Player.entity.ts)
