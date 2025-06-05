@@ -27,12 +27,12 @@ export class PlayerTS implements PlayerEntity {
   }
 
   public async play(): Promise<void> {
-    console.log("[PlayerTS] - Starting music playback...");
+    // console.log("[PlayerTS] - Starting music playback...");
     this._lyrics = await this.loadLyrics();
 
-    console.log("[PlayerTS] - Playing music...");
+    // console.log("[PlayerTS] - Playing music...");
     if (this._interval) {
-      console.log("[PlayerTS] - Music is already playing.");
+      //   console.log("[PlayerTS] - Music is already playing.");
       return;
     }
 
@@ -47,14 +47,15 @@ export class PlayerTS implements PlayerEntity {
   }
 
   public async pause(): Promise<void> {
-    console.log("[PlayerTS] - Pausing music...");
+    // console.log("[PlayerTS] - Pausing music...");
 
     if (!this._interval) {
-      console.log("[PlayerTS] - Music is not playing.");
+      //   console.log("[PlayerTS] - Music is not playing.");
       return;
     }
 
     await clearInterval(this._interval);
+    this._interval = null;
 
     await this.PauseEventManager.notify({
       event: "PAUSE",
@@ -68,7 +69,7 @@ export class PlayerTS implements PlayerEntity {
     });
 
     if (currentLyrics === undefined) {
-      console.log(`[PlayerTS] - No lyrics found for ${currentSeconds}s`);
+      //   console.log(`[PlayerTS] - No lyrics found for ${currentSeconds}s`);
       return;
     }
 
@@ -89,7 +90,7 @@ export class PlayerTS implements PlayerEntity {
     // Cargar desde el archivo
     try {
       if (this._lyrics.length > 0) {
-        console.log("[PlayerTS] - Lyrics already loaded.");
+        // console.log("[PlayerTS] - Lyrics already loaded.");
         return this._lyrics;
       }
       const lyricsPath = path.join(__dirname, "lyrics.json");

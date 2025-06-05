@@ -1,8 +1,6 @@
 import { PlayerEntity } from "../../models/businessEntity/Player.entity";
-import {
-  EventListenerSubscribeData,
-  EventListenerUnsubscribeData,
-} from "./actions/EventManager.action";
+import { EventListenerAction } from "./actions/EventListener.action";
+import { EventListenerUnsubscribeData } from "./actions/EventManager.action";
 
 export class ManageMusicPlayerUseCase {
   private readonly Player: PlayerEntity;
@@ -19,7 +17,7 @@ export class ManageMusicPlayerUseCase {
     await this.Player.pause();
   }
 
-  public playSubscribe(data: EventListenerSubscribeData) {
+  public playSubscribe(data: EventListenerAction) {
     this.Player.PlayEventManager.subscribe(data);
   }
 
@@ -27,7 +25,7 @@ export class ManageMusicPlayerUseCase {
     this.Player.PlayEventManager.unSubscribe(data);
   }
 
-  public pauseSubscribe(data: EventListenerSubscribeData) {
+  public pauseSubscribe(data: EventListenerAction) {
     this.Player.PauseEventManager.subscribe(data);
   }
 
@@ -35,7 +33,7 @@ export class ManageMusicPlayerUseCase {
     this.Player.PauseEventManager.unSubscribe(data);
   }
 
-  public reproductionSubscribe(data: EventListenerSubscribeData) {
+  public reproductionSubscribe(data: EventListenerAction) {
     this.Player.ReproductionEventManager.subscribe(data);
   }
 

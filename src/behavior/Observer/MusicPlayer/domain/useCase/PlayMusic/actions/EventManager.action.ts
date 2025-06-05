@@ -12,11 +12,10 @@ export class EventManagerAction {
 
   constructor() {}
 
-  public async subscribe(data: EventListenerSubscribeData): Promise<void> {
-    const { key, action } = data;
-    const alreadyExist = this._EventListenerAction.get(key);
+  public async subscribe(data: EventListenerAction): Promise<void> {
+    const alreadyExist = this._EventListenerAction.get(data.key);
     if (alreadyExist) return;
-    this._EventListenerAction.set(key, action);
+    this._EventListenerAction.set(data.key, data);
   }
 
   public async unSubscribe(data: EventListenerUnsubscribeData): Promise<void> {
@@ -33,11 +32,6 @@ export class EventManagerAction {
       }
     }
   }
-}
-
-export interface EventListenerSubscribeData {
-  key: EventListenerKey;
-  action: EventListenerAction;
 }
 
 export interface EventListenerUnsubscribeData {

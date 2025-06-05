@@ -17,6 +17,6 @@ export interface EventListenerRequest {
 }
 
 export interface EventListenerAction {
+  key: EventListenerKey;
   update(req: EventListenerRequest): Promise<void>;
 }
-
