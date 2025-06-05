@@ -3,9 +3,8 @@
 create by: Jose Carlos Huerta
 
 ## index 🚀
-
-- [Creation](#creation-)
-  - [Abstract Factory](#abstract-factory-)
+- [Creation 🗺️](#creation-)
+  - [Abstract Factory 🏭](#abstract-factory-)
     - [Documentation](#documentation)
     - [Implementations](#implementations)
     - [Diagram UML](#diagram-uml)
@@ -13,6 +12,10 @@ create by: Jose Carlos Huerta
     - [Documentation](#factory-method---documentation)
     - [Implementations](#factory-method---implementations)
     - [Diagram UML](#factory-method---diagram-uml)
+  - [Builder](#builder)
+    - [Documentation](#builder-method---documentation)
+    - [Implementations](#builder---implementations)
+    - [Diagram UML](#builder---diagram-uml)
 - [Structural](#structural)
   - [Bridge](#bridge)
     - [Documentation](#documentation-1)
@@ -32,6 +35,10 @@ create by: Jose Carlos Huerta
   - [Proxy](#proxy)
     - [Documentation](#documentation-6)
     - [Implementation](#implementation-5)
+- [Behavior 🤖](#behavior-)
+  - [Strategy 🧠](#strategy-)
+    - [Documentation](#documentation-7)
+    - [Implementations](#implementations-6)
 
 ## Creation 🗺️
 
