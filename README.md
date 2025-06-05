@@ -189,3 +189,16 @@ create by: Jose Carlos Huerta
 ### Documentation
 
 - [Refactoring Guru - Proxy](https://refactoring.guru/es/design-patterns/proxy)
+
+# Behavior 🤖
+
+## Strategy 🧠
+
+![Strategy](Docs/Strategy.png)
+
+### Documentation 📚
+
+- [Refactoring Guru - Strategy](https://refactoring.guru/design-patterns/strategy)
+- [STRATEGY | PATRONES de DISEÑO](https://www.youtube.com/watch?v=VQ8V0ym2JSo)
+
+### Implementations 📚

@@ -16,6 +16,7 @@
     "typescript": "^5.5.4"
   },
   "dependencies": {
-    "fs-extra": "^11.3.0"
+    "fs-extra": "^11.3.0",
+    "hexagonal-templeate": "file:"
   }
 }
