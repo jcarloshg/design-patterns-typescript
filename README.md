@@ -202,3 +202,22 @@ create by: Jose Carlos Huerta
 - [STRATEGY | PATRONES de DISEÑO](https://www.youtube.com/watch?v=VQ8V0ym2JSo)
 
 ### Implementations 📚
+
+#### [Register users](src/behavior/Strategy/RegisterUser)
+
+- Client
+  - [Client](src/behavior/Strategy/RegisterUser/Client.ts)
+- Context
+  - [CreateUser.application.ts ](src/behavior/Strategy/RegisterUser/application/CreateUser.application.ts)
+- Strategies
+  - [CreateUser.UseCase.ts](src/behavior/Strategy/RegisterUser/domain/useCases/CreateUser/CreateUser.UseCase.ts)
+    - [RegisterUser.domain.ts](src/behavior/Strategy/RegisterUser/domain/useCases/CreateUser/functions/RegisterUser.domain.ts)
+    - [SendWelcomeEmail.domain.ts](src/behavior/Strategy/RegisterUser/domain/useCases/CreateUser/functions/SendWelcomeEmail.domain.ts)
+  - [Logger.domain.ts](src/behavior/Strategy/RegisterUser/domain/commons/Logger.domain.ts)
+- Concrete strategies
+  - [CreateUser.UseCase.ts](src/behavior/Strategy/RegisterUser/domain/useCases/CreateUser/CreateUser.UseCase.ts)
+    - [RegisterUser.json.ts](src/behavior/Strategy/RegisterUser/infrastructure/useCases/CreateUser/json/RegisterUser.json.ts)
+    - [RegisterUser.Mock.ts](src/behavior/Strategy/RegisterUser/infrastructure/useCases/CreateUser/mock/RegisterUser.Mock.ts)
+    - [SendWelcomeEmail.twilio.ts](src/behavior/Strategy/RegisterUser/infrastructure/useCases/CreateUser/twilio/SendWelcomeEmail.twilio.ts)
+  - [Logger.CloudWatch.ts](src/behavior/Strategy/RegisterUser/infrastructure/commons/Logger.CloudWatch.ts)
+  - [Logger.Sentry.ts](src/behavior/Strategy/RegisterUser/infrastructure/commons/Logger.Sentry.ts)
