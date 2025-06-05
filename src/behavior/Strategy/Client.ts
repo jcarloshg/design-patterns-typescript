@@ -1,25 +1,23 @@
-import CreateUserApplication from "./application/CreateUser.application";
+import {
+  CreateUseApplicationV1,
+  GetCreateUserApplicationV2,
+} from "./application/CreateUser.application";
 import { CreateUserUseCase } from "./domain/useCases/CreateUser/CreateUser.UseCase";
 
 export const Client = async (createUserUseCase: CreateUserUseCase) => {
-  try {
-    const cratedUser = await createUserUseCase.RegisterUser.run({
+  const response = await createUserUseCase.run({
+    userData: {
       name: "John Doe",
-      email: "JohnDoe@gmail.com",
-    });
-
-    console.log(`[Client - cratedUser] -> `, cratedUser);
-
-    const emailResponse = await createUserUseCase.SendWelcomeEmail.run({
-      email: cratedUser.email,
-    });
-
-    console.log(`[Client - emailResponse] -> `, emailResponse);
-  } catch (error) {
-    console.error("Error in Client:", error);
-  }
+      email: "JohnDoe@strategy.com",
+    },
+  });
+  console.log(`[Client - response] -> `, response);
 };
 
 (async () => {
-  await Client(CreateUserApplication);
+  // const createUseApplicationV1 = await CreateUseApplicationV1();
+  // await Client(createUseApplicationV1);
+
+  const createUseApplicationV2 = await GetCreateUserApplicationV2();
+  await Client(createUseApplicationV2);
 })();
