@@ -2,47 +2,50 @@
 
 create by: Jose Carlos Huerta
 
-## index 🚀
+## Index 🚀
 
 - [Creation 🗺️](#creation-)
   - [Abstract Factory 🏭](#abstract-factory-)
-    - [Documentation](#documentation)
-    - [Implementations](#implementations)
-    - [Diagram UML](#diagram-uml)
+    - [Documentation](#abstract-factory-documentation)
+    - [Implementations](#abstract-factory-implementations)
+    - [Diagram UML](#abstract-factory-diagram-uml)
   - [Factory Method](#factory-method)
-    - [Documentation](#factory-method---documentation)
-    - [Implementations](#factory-method---implementations)
-    - [Diagram UML](#factory-method---diagram-uml)
+    - [Documentation](#factory-method-documentation)
+    - [Implementations](#factory-method-implementations)
+    - [Diagram UML](#factory-method-diagram-uml)
   - [Builder](#builder)
-    - [Documentation](#builder-method---documentation)
-    - [Implementations](#builder---implementations)
-    - [Diagram UML](#builder---diagram-uml)
+    - [Documentation](#builder-method-documentation)
+    - [Implementations](#builder-implementations)
+    - [Diagram UML](#builder-diagram-uml)
 - [Structural](#structural)
   - [Bridge](#bridge)
-    - [Documentation](#documentation-1)
-    - [Implementation](#implementation)
+    - [Documentation](#bridge-documentation)
+    - [Implementation](#bridge-implementation)
   - [Composite](#composite)
-    - [Documentation](#documentation-2)
-    - [Implementation](#implementation-1)
+    - [Documentation](#composite-documentation)
+    - [Implementation](#composite-implementation)
   - [Decorator](#decorator)
-    - [Documentation](#documentation-3)
-    - [Implementation](#implementation-2)
+    - [Documentation](#decorator-documentation)
+    - [Implementation](#decorator-implementation)
   - [Facade](#facade)
-    - [Documentation](#documentation-4)
-    - [Implementation](#implementation-3)
+    - [Documentation](#facade-documentation)
+    - [Implementation](#facade-implementation)
   - [Flyweight](#flyweight)
-    - [Documentation](#documentation-5)
-    - [Implementation](#implementation-4)
+    - [Documentation](#flyweight-documentation)
+    - [Implementation](#flyweight-implementation)
   - [Proxy](#proxy)
-    - [Documentation](#documentation-6)
-    - [Implementation](#implementation-5)
+    - [Documentation](#proxy-documentation)
+    - [Implementation](#proxy-implementation)
 - [Behavior 🤖](#behavior-)
   - [Strategy 🧠](#strategy-)
-    - [Documentation 📚](#documentation-📚)
-    - [Implementations 📚](#implementations-📚)
+    - [Documentation 📚](#strategy-documentation-)
+    - [Implementations 📚](#strategy-implementations-)
   - [Observer](#observer)
-    - [Documentation 📚](#documentation-📚-1)
-    - [Implementations 📚](#implementations-📚-1)
+    - [Documentation 📚](#observer-documentation-)
+    - [Implementations 📚](#observer-implementations-)
+  - [Command](#command)
+    - [Documentation 📚](#command-documentation-)
+    - [Implementations 📚](#command-implementations-)
 
 ## Creation 🗺️
 
@@ -261,3 +264,14 @@ create by: Jose Carlos Huerta
   - [EventManager](src/behavior/Observer/MusicPlayer/domain/useCase/PlayMusic/actions/EventManager.action.ts)
 - Publisher - Player
   - [Player](src/behavior/Observer/MusicPlayer/domain/models/businessEntity/Player.entity.ts)
+
+## Command
+
+### Documentation 📚
+
+- [Refactoring Guru - Command](https://refactoring.guru/design-patterns/command)
+- [The Command Pattern Explained and Implemented in Java | Behavioral Design Patterns | Geekific](https://www.youtube.com/watch?v=UfGD60BYzPM)
+
+### Implementations 📚
+
+#### [Smartphone](src/behavior/Command/Smartphone)

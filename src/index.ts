@@ -49,4 +49,4 @@ console.log("This is a project with Nodejs and TypeScript");
 // import("./behavior/Observer/MusicPlayer/Client");
 
 // Command
-import("./behavior/Command/Client");
+import("./behavior/Command/Smartphone/Client");
