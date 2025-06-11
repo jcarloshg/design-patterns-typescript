@@ -2,7 +2,15 @@
 
 create by: Jose Carlos Huerta
 
-## Index 🚀
+This project is a collection of TypeScript implementations of the most common design patterns in software engineering. Organized into categories (creational and structural), each pattern includes:
+
+- Explanatory documentation
+- Practical implementations in TypeScript
+- UML diagrams to visualize the structure
+
+The project serves as an educational resource for developers who want to understand and apply design patterns in real applications, showing concrete implementation examples with TypeScript.
+
+## index 🚀
 
 - [Creation 🗺️](#creation-)
   - [Abstract Factory 🏭](#abstract-factory-)
